@@ -1,0 +1,26 @@
+<%
+from bottle import request
+import sqlite3
+name = request.forms.get("name")
+c.execute("INSERT INTO customer VALUES (null, ?, ?, ?, ?, ?, ?)", (name, stAddr, city, state, zip, phone))
+db.commit()
+%>
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>addCustomerResult.html</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="coffeeCSS.css">
+		</head>
+		
+		<body>
+			<h1>Add Customer:</h1>
+			
+			<form>
+				<h2>Customer: {{ name }} added to database</h2>
+				
+				<input type="button" value="Home Page" onclick="location.href='index.html';">
+			</form>
+		</body>
+	</html>

@@ -1,0 +1,52 @@
+header {
+	font-weight: bold;
+	font-size: 250%;
+	color: #89613d;
+}
+
+#wrapper {
+	text-align: center;
+}
+
+body {
+	background-color: #efe5d0;
+	margin: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: table;
+	padding: 10px;
+	border: thin dotted #7e7e7e;
+	background-color: #e1ceb8;
+	margin: 0 auto;
+}
+
+div.tableRow {
+	display: table-row;
+}
+
+div.tableRow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+
+div.tableRow p:first-child {
+	text-align: right;
+}
+
+heading {
+	font-weight: bold;
+}
+
+footer {
+	position: fixed;
+	height: 10%;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
